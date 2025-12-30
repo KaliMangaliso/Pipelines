@@ -1,0 +1,22 @@
+
+name: PipelineWorkflow
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  build:
+    name: Azure Pipeline
+    runs-on: Default
+    steps:
+      - name: Azure Pipelines Action
+        uses: azure/pipelines@v1
+        with:
+          azure-devops-project-url: https://dev.azure.com/mangalisokali0081/AgileProject/
+          azure-pipeline-name: 'Pipelines'
+          azure-devops-token: ${{ secrets.AZURE_DEVOPS_TOKEN }}
