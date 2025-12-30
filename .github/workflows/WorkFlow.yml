@@ -17,6 +17,6 @@ jobs:
       - name: Azure Pipelines Action
         uses: azure/pipelines@v1
         with:
-          azure-devops-project-url: https://dev.azure.com/mangalisokali0081/AgileProject/
+          azure-devops-project-url: https://dev.azure.com/mangalisokali0081/AgileProject
           azure-pipeline-name: 'Pipelines'
           azure-devops-token: ${{ secrets.AZURE_DEVOPS_TOKEN }}
