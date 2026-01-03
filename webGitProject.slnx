@@ -1,3 +1,7 @@
 <Solution>
+  <Folder Name="/.GitHub/" />
+  <Folder Name="/WorkFlows/">
+    <File Path="WorkFlow.yml" />
+  </Folder>
   <Project Path="webGitProject/webGitProject.csproj" />
 </Solution>
